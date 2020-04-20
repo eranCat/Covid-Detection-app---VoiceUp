@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please fill your details bellow:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/age_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Age.."
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Height"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:id="@+id/height_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/opt_centimeters"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Centimeter" />
+
+            <RadioButton
+                android:id="@+id/opt_feet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Feet" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/feet_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/feet_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:hint="Feet"
+                android:inputType="numberSigned" />
+
+            <EditText
+                android:id="@+id/inches_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:hint="Inches"
+                android:inputType="numberSigned" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/centimeters_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/height_in_centimeters"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/select_country"
+            android:textColor="#000"
+            android:textSize="22sp" />
+        <com.vocaai.covid19.views.CountriesButton
+            android:id="@+id/country_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/select_options_btn"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/have_diagnosed_conditions"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:id="@+id/diseases"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/ischmic_hear_disease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Ischmic hear disease"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/chronic_lung_disease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Chronic lung disease"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/allergies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Allergies"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/diabetes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Diabetes"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/asthma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Asthma"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/chronic_kidney_disease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Chronic kidney disease"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/seasonal_allergies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Seasonal allergies"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/hypertension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Hypertension"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="What's your gender?"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <com.vocaai.covid19.views.GenderButton
+            android:id="@+id/gender_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/select_one_option" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="Do you smoke?"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <com.vocaai.covid19.views.SmokeStatusButton
+            android:id="@+id/smoke_btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select one option"
+            android:background="@drawable/select_options_btn"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="What is your current status?"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <com.vocaai.covid19.views.CurrentStatusButton
+            android:id="@+id/current_status_btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_one_option"
+            android:background="@drawable/select_options_btn"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+        <CheckBox
+            android:id="@+id/is_diagnosed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/were_you_diagnosed"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:drawablePadding="8dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Are you currently experiencing any of the following symptoms?"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:id="@+id/symptoms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/sneezing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Allergies"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/breath_shortness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Shortness of breath"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/diarrea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Diarrea"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/headache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="headache"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/nausea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Nausea and/or vomiting"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/sore_throat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Sore throat"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/runny_nose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Runny nose or nasal congestion"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/itching"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Itching (eyes or other)"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/dry_cough"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Dry cough"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/muscle_aches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="musle_aches"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/sputum_cough"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Cough with sputum production"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/fetigue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="fetigue"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/fever"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="I have a fever"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/feel_well"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="I feel well"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Current body temperature"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/temp_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/opt_celsious"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Celsious"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/opt_fahrenheit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fahrenheit" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/temp_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="numberDecimal"
+            android:hint="temperature..." />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_btn"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Covid19 Voca AI</string>
+
+    <string-array name="countries" >
+        <item>אפגניסטן</item>
+        <item>אלבניה</item>
+        <item>אלג\'יריה</item>
+        <item>סמואה האמריקנית</item>
+        <item>אנדורה</item>
+        <item>אנגולה</item>
+        <item>אנגווילה</item>
+        <item>אנטארקטיקה</item>
+        <item>אנטיגואה וברבודה</item>
+        <item>ארגנטינה</item>
+        <item>ארמניה</item>
+        <item>ארובה</item>
+        <item>אוסטרליה</item>
+        <item>אוסטריה</item>
+        <item>אזרבייג\'ן</item>
+        <item>איי בהאמה</item>
+        <item>בחריין</item>
+        <item>בנגלדש</item>
+        <item>ברבדוס</item>
+        <item>בלארוס</item>
+        <item>בלגיה</item>
+        <item>בליז</item>
+        <item>בנין</item>
+        <item>ברמודה</item>
+        <item>בוטן</item>
+        <item>בוליביה (מדינת פלורינציה)</item>
+        <item>בונייר, סנט אוסטטיוס וסבא</item>
+        <item>בוסניה והרצגובינה</item>
+        <item>בוצואנה</item>
+        <item>האי בובוט</item>
+        <item>ברזיל</item>
+        <item>הטריטוריה הבריטית באוקיאנוס ההודי (The)</item>
+        <item>ברוניי דארוסלאם</item>
+        <item>בולגריה</item>
+        <item>בורקינה פאסו</item>
+        <item>בורונדי</item>
+        <item>קאבו ורדה</item>
+        <item>קמבודיה</item>
+        <item>קמרון</item>
+        <item>קנדה</item>
+        <item>איי קיימן (ה)</item>
+        <item>הרפובליקה המרכז אפריקאית</item>
+        <item>צ\'אד</item>
+        <item>צ\'ילה</item>
+        <item>סין</item>
+        <item>אי חג המולד</item>
+        <item>איי קוקוס (קילינג) (האי)</item>
+        <item>קולומביה</item>
+        <item>קומורו (ה)</item>
+        <item>קונגו (הרפובליקה הדמוקרטית של המדינה)</item>
+        <item>קונגו (ה)</item>
+        <item>איי קוק (ה)</item>
+        <item>קוסטה ריקה</item>
+        <item>קרואטיה</item>
+        <item>קובה</item>
+        <item>קוראסאו</item>
+        <item>קפריסין</item>
+        <item>צ\'כיה</item>
+        <item>חוף השנהב</item>
+        <item>דנמרק</item>
+        <item>ג\'יבוטי</item>
+        <item>דומיניקה</item>
+        <item>הרפובליקה הדומיניקנית (ה)</item>
+        <item>אקוודור</item>
+        <item>מצרים</item>
+        <item>אל סלבדור</item>
+        <item>גיניאה המשוונית</item>
+        <item>אריתריאה</item>
+        <item>אסטוניה</item>
+        <item>אתיופיה</item>
+        <item>איי פוקלנד (ה) [מלווינוס]</item>
+        <item>איי פארו (ה)</item>
+        <item>פיג\'י</item>
+        <item>פינלנד</item>
+        <item>צרפת</item>
+        <item>גיאנה הצרפתית</item>
+        <item>פולינזיה הצרפתית</item>
+        <item>שטחי דרום צרפת (ה)</item>
+        <item>גבון</item>
+        <item>גמביה (ה)</item>
+        <item>ג\'ורג\'יה</item>
+        <item>גרמניה</item>
+        <item>גאנה</item>
+        <item>גיברלטר</item>
+        <item>יוון</item>
+        <item>גרינלנד</item>
+        <item>גרנדה</item>
+        <item>גוואדלופ</item>
+        <item>גואם</item>
+        <item>גואטמלה</item>
+        <item>גרנזי</item>
+        <item>גינאה</item>
+        <item>גינאה ביסאו</item>
+        <item>גיאנה</item>
+        <item>האיטי</item>
+        <item>איי הרד ואיי מקדונלד</item>
+        <item>הכס הקדוש ()</item>
+        <item>הונדורס</item>
+        <item>הונג קונג</item>
+        <item>הונגריה</item>
+        <item>איסלנד</item>
+        <item>הודו</item>
+        <item>אינדונזיה</item>
+        <item>איראן (הרפובליקה האיסלאמית של)</item>
+        <item>עירק</item>
+        <item>אירלנד</item>
+        <item>האי מאן</item>
+        <item>ישראל</item>
+        <item>איטליה</item>
+        <item>ג\'מייקה</item>
+        <item>יפן</item>
+        <item>ג\'רזי</item>
+        <item>ירדן</item>
+        <item>קזחסטן</item>
+        <item>קניה</item>
+        <item>קיריבטי</item>
+        <item>קוריאה (הרפובליקה העממית הדמוקרטית של)</item>
+        <item>קוריאה (הרפובליקה של)</item>
+        <item>כווית</item>
+        <item>קירגיזסטן</item>
+        <item>הרפובליקה הדמוקרטית העממית של לאו</item>
+        <item>לטביה</item>
+        <item>לבנון</item>
+        <item>לסוטו</item>
+        <item>ליבריה</item>
+        <item>לוב</item>
+        <item>ליכטנשטיין</item>
+        <item>ליטא</item>
+        <item>לוקסמבורג</item>
+        <item>מקאו</item>
+        <item>מדגסקר</item>
+        <item>מלאווי</item>
+        <item>מלזיה</item>
+        <item>האיים המלדיביים</item>
+        <item>מאלי</item>
+        <item>מלטה</item>
+        <item>איי מרשל (ה)</item>
+        <item>מרטיניק</item>
+        <item>מאוריטניה</item>
+        <item>מאוריציוס</item>
+        <item>מיוט</item>
+        <item>מקסיקו</item>
+        <item>מיקרונזיה (המדינות הפדרליות של)</item>
+        <item>מולדובה (הרפובליקה של)</item>
+        <item>מונקו</item>
+        <item>מונגוליה</item>
+        <item>מונטנגרו</item>
+        <item>מונטסראט</item>
+        <item>מרוקו</item>
+        <item>מוזמביק</item>
+        <item>מיאנמר</item>
+        <item>נמיביה</item>
+        <item>נאורו</item>
+        <item>נפאל</item>
+        <item>הולנד</item>
+        <item>קלדוניה החדשה</item>
+        <item>ניו זילנד</item>
+        <item>ניקרגואה</item>
+        <item>ניז\'ר ​​(ה)</item>
+        <item>ניגריה</item>
+        <item>ניואה</item>
+        <item>האי נורפולק</item>
+        <item>איי מריאנה הצפוניים (ה)</item>
+        <item>נורווגיה</item>
+        <item>עומאן</item>
+        <item>פקיסטן</item>
+        <item>פלאו</item>
+        <item>פלסטין, מדינת</item>
+        <item>פנמה</item>
+        <item>פפואה גינאה החדשה</item>
+        <item>פרגוואי</item>
+        <item>פרו</item>
+        <item>הפיליפינים (ה)</item>
+        <item>פיטקרן</item>
+        <item>פולין</item>
+        <item>פורטוגל</item>
+        <item>פוארטו ריקו</item>
+        <item>קטאר</item>
+        <item>רפובליקת צפון מקדוניה</item>
+        <item>רומניה</item>
+        <item>הפדרציה הרוסית</item>
+        <item>רואנדה</item>
+        <item>איחוד</item>
+        <item>סנט ברתלמי,סנט הלנה, ההתעלות וטריסטן דה קונהה</item>
+        <item>סנט קיטס ונביס</item>
+        <item>סנט לוסיה</item>
+        <item>סנט מרטין (חלק צרפתי)</item>
+        <item>סיינט פייר ומיקלון</item>
+        <item>וינסנט הקדוש ו ה - גרנידיים</item>
+        <item>סמואה</item>
+        <item>סן מרינו</item>
+        <item>סאו טומה ופרינסיפה</item>
+        <item>ערב הסעודית</item>
+        <item>סנגל</item>
+        <item>סרביה</item>
+        <item>סיישל</item>
+        <item>סיירה לאון</item>
+        <item>סינגפור</item>
+        <item>סנט מרטן (חלק הולנדי)</item>
+        <item>סלובקיה</item>
+        <item>סלובניה</item>
+        <item>איי שלמה</item>
+        <item>סומליה</item>
+        <item>דרום אפריקה</item>
+        <item>דרום ג\'ורג\'יה ואיי סנדוויץ \'דרום</item>
+        <item>דרום סודן</item>
+        <item>ספרד</item>
+        <item>סרי לנקה</item>
+        <item>סודן (ה)</item>
+        <item>סורינאם</item>
+        <item>שבדיה</item>
+        <item>שוויץ</item>
+        <item>הרפובליקה הערבית של סוריה</item>
+        <item>טייוואן (מחוז סין)</item>
+        <item>טג\'יקיסטן</item>
+        <item>טנזניה, הרפובליקה המאוחדת של</item>
+        <item>תאילנד</item>
+        <item>טימור-לסטה</item>
+        <item>ללכת</item>
+        <item>טוקלאו</item>
+        <item>טונגה</item>
+        <item>טרינידד וטובגו</item>
+        <item>תוניסיה</item>
+        <item>טורקיה</item>
+        <item>טורקמניסטן</item>
+        <item>איי הטורקים וקוקוס (ה)</item>
+        <item>טובאלו</item>
+        <item>אוגנדה</item>
+        <item>אוקראינה</item>
+        <item>איחוד האמירויות הערביות</item>
+        <item>הממלכה המאוחדת של בריטניה וצפון אירלנד (ה)</item>
+        <item>האיים הקטנים של ארצות הברית הקטנות</item>
+        <item>ארה\ב</item>
+        <item>אורוגוואי</item>
+        <item>אוזבקיסטן</item>
+        <item>ונואטו</item>
+        <item>ונצואלה (הרפובליקה הבוליברית)</item>
+        <item>ויאטנם</item>
+        <item>איי הבתולה (בריטניה)</item>
+        <item>איי הבתולה (ארה\ב)</item>
+        <item>וואליס ופוטונה</item>
+        <item>סהרה המערבית</item>
+        <item>תימן</item>
+        <item>זמביה</item>
+        <item>זימבבואה</item>
+        <item>איי אלנד</item>
+        <item>איי אלנד</item>
+        <item>איי אלנד</item>
+        <item>איי אלנד</item>
+
+    </string-array>
+</resources>
