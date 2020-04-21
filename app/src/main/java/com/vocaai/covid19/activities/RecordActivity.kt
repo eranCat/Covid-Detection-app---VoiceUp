@@ -68,6 +68,7 @@ class RecordActivity : AppCompatActivity() {
 
         ActivityCompat.requestPermissions(this, permissions, RC_RECORD_AUDIO)
 
+        supportActionBar?.setHomeButtonEnabled(true)
     }
 
     private fun recordTapped() {

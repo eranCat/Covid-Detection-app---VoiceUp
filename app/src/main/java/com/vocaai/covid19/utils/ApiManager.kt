@@ -10,14 +10,15 @@ object APIManager {
 
     fun sendReport(data: UserData, completion: Completion) {
         val url = UrlManager.urlSubmissions()
-        val json=Gson().toJson(data)
+        val json = Gson().toJson(data)
         UrlManager.post(url, json, completion)
     }
 
     fun submitRecord(submitId: String, recordName: String, completion: Completion) {
         val url = UrlManager.urlRecord(submitId, recordName)
-        val json = mapOf("fileType" to "audio/wav")
-        UrlManager.post(url, recordName,json, completion)
+        val map = mapOf("fileType" to "audio/wav")
+        val json = Gson().toJson(map)
+        UrlManager.post(url,json, completion)
     }
 
     fun submitFeedback(submitId: String ,completion: Completion) {

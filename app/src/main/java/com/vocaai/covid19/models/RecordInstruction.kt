@@ -1,6 +1,5 @@
 package com.vocaai.covid19.models
 
-import android.content.Context
 import android.os.Parcel
 import android.os.Parcelable
 
@@ -9,16 +8,6 @@ data class RecordInstruction(
     var description: String,
     var recordName: String
 ) : Parcelable {
-    constructor(
-        context: Context,
-        title: RecordInstructions.Titles,
-        desc: RecordInstructions.Descriptions,
-        recordName: String
-    ) : this(
-        title.serverValue(context),
-        desc.serverValue(context),
-        recordName
-    )
 
     constructor(source: Parcel) : this(
         source.readString()!!,

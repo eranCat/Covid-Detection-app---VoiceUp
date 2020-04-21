@@ -11,16 +11,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <Button
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="record your voice"
-            android:textColor="#fff" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,7 +26,7 @@
             android:layout_marginBottom="16dp"
             android:padding="8dp"
             android:text="Covid-19 (CoronaVirus)"
-            android:textColor="#C62828"
+            android:textColor="#E64A19"
             android:textSize="36sp" />
 
         <TextView
@@ -56,16 +46,6 @@
             android:padding="8dp"
             android:text="@string/covid19_description"
             android:textColor="#000" />
-
-        <Button
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="RECORD"
-            android:textColor="#fff"
-            android:textSize="16sp" />
-
 
         <ImageView
             android:layout_width="match_parent"
@@ -90,15 +70,6 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="@string/success_phase" />
-
-        <Button
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="RECORD"
-            android:textColor="#fff"
-            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -1,6 +1,5 @@
 package com.vocaai.covid19.activities
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
@@ -39,19 +38,19 @@ class FormActivity : AppCompatActivity() {
         //to record activity
         val hud = KProgressHUD.create(this)
         hud.show()
-        APIManager.sendReport(buildData()){ result ->
+        APIManager.sendReport(buildData()) { result ->
 
-            when  {
-                result.isSuccess-> {
+            when {
+                result.isSuccess -> {
                     toast("Success")
                     val submission = result.getOrNull() as? Submission
                         ?: return@sendReport
                     GlobalData.currentSubmissionId = submission.submissionId
                 }
-                result.isFailure->toast("Data submission failed")
+                result.isFailure -> toast("Data submission failed")
             }
 
-            RecordActivity.start(this, RecordInstructions(),1)
+            RecordActivity.start(this, RecordInstructions(), 1)
 
             hud.dismiss()
         }
@@ -131,10 +130,8 @@ class FormActivity : AppCompatActivity() {
                 ?: return@forEach
 
             if (checkBox.isChecked) {
-//                TOdo add tags to check boxes or another method
-                val tag = checkBox.tag as? String
-                    ?: return@forEach
-                list.add(tag)
+                //TODO probably should be only english
+                list.add(checkBox.text.toString())
             }
         }
         return list

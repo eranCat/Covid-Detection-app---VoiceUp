@@ -23,6 +23,7 @@ android {
         }
     }
 
+
 }
 
 dependencies {
@@ -43,7 +44,9 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
 
 //    corotines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.4"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.5'
+
 
 //    progress
     implementation 'com.kaopiz:kprogresshud:1.2.0'

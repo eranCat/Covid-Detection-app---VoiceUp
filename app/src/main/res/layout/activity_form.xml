@@ -200,7 +200,7 @@
             android:textColor="#000"
             android:textSize="24sp" />
 
-        <com.vocaai.covid19.views.GenderButton
+        <com.vocaai.covid19.views.enum_btns.GenderButton
             android:id="@+id/gender_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -216,7 +216,7 @@
             android:textColor="#000"
             android:textSize="24sp" />
 
-        <com.vocaai.covid19.views.SmokeStatusButton
+        <com.vocaai.covid19.views.enum_btns.SmokeStatusButton
             android:id="@+id/smoke_btn"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="match_parent"
@@ -235,7 +235,7 @@
             android:textColor="#000"
             android:textSize="24sp" />
 
-        <com.vocaai.covid19.views.CurrentStatusButton
+        <com.vocaai.covid19.views.enum_btns.CurrentStatusButton
             android:id="@+id/current_status_btn"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="match_parent"

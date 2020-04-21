@@ -32,7 +32,9 @@
             android:name=".activities.FormActivity"
             android:parentActivityName=".activities.MainActivity"
             android:screenOrientation="portrait"
+            android:launchMode="singleTop"
             tools:ignore="LockedOrientationActivity" />
+
         <activity
             android:name=".activities.LearnMoreActivity"
             android:parentActivityName=".activities.MainActivity" />
